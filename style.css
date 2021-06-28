@@ -1,0 +1,181 @@
+body
+{
+	font-family: 'QuickSand', calibri, sans serif;
+	background-image: url("background4.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: contain;
+	font-size: 1.2em;
+	line-height: 2em;
+}
+
+.matrice {
+	background-image: url("background6.png");
+  }
+
+@font-face 
+{
+	font-family: 'QuickSand';
+	src: url('../Font/Quicksand-Regular.otf');
+}
+
+ul
+{
+	border: 0.5px #d2d6d7 solid;
+	box-shadow: 0px 2px 4px #f5edd8;
+	margin: 50px;
+	padding: 30px;
+	background-color: #ebe9da;
+}
+
+ul ol
+{
+	list-style-type: none;
+}
+
+h1
+{
+	font-size: 4em;
+}
+
+h2
+{
+	text-align: center;
+	clear: both;
+}
+
+.photo
+{
+	border: 4px white solid;
+	float: right;
+}
+
+.menu
+{
+	text-align: justify;
+	font-size: x-large;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	list-style-type: none;
+	clear: both;
+	opacity: 0.5;
+}
+
+menu:hover {
+	opacity: 1.0;
+  }
+
+#cv
+{
+	width: 70%;
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#pseudoadresse
+{
+	display: flex;
+	text-align: center;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+#formulaire
+{
+text-align: center;
+}
+
+#boutonaccueil
+{order: 1;}
+#boutoncv
+{order: 2;}
+#boutonphotos
+{order: 3;}
+#boutonmusique
+{order: 4;}
+#boutoncontact
+{order: 5;}
+
+a:link {
+text-decoration: none;
+border-bottom: 0.2px dotted;
+text-transform: uppercase;
+font-weight: bold;
+color: black;
+}
+
+a:visited {
+text-decoration: none;
+text-transform: uppercase;
+font-weight: bold;
+color: black;
+}
+
+a:focus {
+border-bottom: 1px solid;
+background: #BAE498;
+}
+
+a:hover {
+border-left: 2.5px solid;
+background: #8ABAD3;
+}
+
+a:active {
+background: #265301;
+color: #CDFEAA;
+}
+
+.integrations
+{
+	width: 65%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+html { scroll-behavior: smooth; }
+
+@media screen and (max-width: 1280px)
+{
+	.menu
+	{
+		text-align: center;
+		font-size: x-large;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		list-style-type: none;
+		clear: both;
+		line-height: 3em;
+	}
+
+	#cv
+	{
+		width: 100%;
+		text-align: left;
+		margin-left: none;
+		margin-right: none;
+	}
+
+	h1
+	{
+		font-size: 3em;
+	}
+
+	#photocv
+	{
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+}

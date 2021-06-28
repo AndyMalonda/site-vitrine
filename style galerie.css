@@ -1,0 +1,157 @@
+body
+{
+	font-family: 'QuickSand', calibri, sans serif;
+	background-image: url("albums/dystopy/dys4.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: contain;
+	font-size: 1.2em;
+	line-height: 2em;
+}
+
+@font-face 
+{
+	font-family: 'QuickSand';
+	src: url('../Font/Quicksand-Regular.otf');
+}
+
+ul
+{
+	border: 0.5px #d2d6d7 solid;
+	box-shadow: 0px 2px 4px #f5edd8;
+	margin: 50px;
+	padding: 30px;
+	background-color: #ebe9da;
+}
+
+h1
+{
+	font-size: 4em;
+	text-shadow: 0.3px 0.5px 0 white;
+}
+
+h2
+{
+	text-align: center;
+	clear: both;
+}
+
+.photo
+{
+	border: 4px white solid;
+	float: right;
+}
+
+.menu
+{
+	text-align: justify;
+	font-size: x-large;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style-type: none;
+	clear: both;
+}
+
+a:link {
+text-decoration: none;
+border-bottom: 0.2px dotted;
+text-transform: uppercase;
+font-weight: bold;
+color: black;
+
+}
+
+a:visited {
+text-decoration: none;
+text-transform: uppercase;
+font-weight: bold;
+color: black;
+}
+
+a:focus {
+border-bottom: 1px solid;
+background: #BAE498;
+
+}
+
+a:hover {
+border-left: 2.5px solid;
+background: #8ABAD3;
+}
+
+a:active {
+background: #265301;
+color: #CDFEAA;
+}
+
+*{box-sizing: border-box}
+
+img{max-width: 100%}
+
+.slider_focus{
+
+max-width: 800px;
+margin: 2rem auto
+	
+	}	
+	
+.slider_focus ul{
+	
+display: flex;
+padding-bottom: 66.67%;/* ratio pour le responsive */
+position: relative;
+overflow: hidden;
+list-style-type: none;
+margin:0;
+
+	
+	}
+
+.slider_focus ul li a img{
+
+flex: 1;/*les photos occupent la même place selon la largeur du conteneur*/
+padding: .5rem;
+	
+	}
+
+.slider_focus ul li span img{
+
+position: absolute;
+bottom: 0;
+left: -100%;
+opacity: 0;
+transition: all .6s
+	
+	}
+
+
+.slider_focus ul li:focus-within span img{
+	
+left: 0;
+opacity: 1
+	
+	}
+
+@media screen and (max-width: 1280px)
+{
+	.menu
+	{
+		text-align: center;
+		font-size: x-large;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		list-style-type: none;
+		clear: both;
+		line-height: 3em;
+	}
+	
+
+		h1
+	{
+		font-size: 3em;
+	}
+ }
