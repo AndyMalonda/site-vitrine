@@ -10,8 +10,11 @@ function matriceTheme() {
     element.classList.toggle("matrice");
     element2.style.visibility = "visible";
     menuBox.classList.add("menumatrice");
-    document.getElementById("buttonmatrix").innerHTML = "Voilà c'est tout";
+    document.getElementById("buttonmatrix").style.visibility = "hidden";
  }
+
+//     document.getElementById("buttonmatrix").innerHTML = "Voilà c'est tout";
+
 
  // menu flottant quand on scroll
  window.addEventListener("scroll", () => {
