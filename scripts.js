@@ -18,9 +18,9 @@ function matriceTheme() {
 
  // menu flottant quand on scroll
  window.addEventListener("scroll", () => {
-    if (lWidth > 1200 && window.scrollY >= 300) {
-        menuBox.classList.add("menuNav")
+    if (window.scrollY >= 300) {
+        document.getElementById("myBtn").style.display = "block";    
     } else {
-        menuBox.classList.remove("menuNav")
+        document.getElementById("myBtn").style.display = "none";
     }
  })
